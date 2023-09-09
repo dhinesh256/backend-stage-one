@@ -15,7 +15,7 @@ app.get("/api", (req, res) => {
     "github_file_url": "https://github.com/dhinesh256/backend-stage-one/edit/master/index.js",
     "github_repo_url": "https://github.com/dhinesh256/backend-stage-one"
   }
-  responseObj.status = 200
+  responseObj.status_code = 200
   res.send(responseObj);
 });
 
