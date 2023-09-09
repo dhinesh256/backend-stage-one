@@ -10,10 +10,10 @@ app.get("/api", (req, res) => {
   let responseObj = {
     "slack_name": slack_name,
     "current_day":  weekday[date.getDay()],
-    "utc_time": date.getUTCMilliseconds(),
+    "utc_time": date.toISOString(),
     "track": track,
-    "github_file_url": "backend-stage-one\index.js",
-    "github_repo_url": "gt_url"
+    "github_file_url": "https://github.com/dhinesh256/backend-stage-one/edit/master/index.js",
+    "github_repo_url": "https://github.com/dhinesh256/backend-stage-one"
   }
   responseObj.status = 200
   res.send(responseObj);
