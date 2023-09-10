@@ -1,7 +1,8 @@
 const express = require("express");
 
 const app = express();
-const date = new Date();
+let date = new Date();
+//date.setHours(date.getHours() - 1)
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 app.get("/api", (req, res) => {
